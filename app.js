@@ -22,9 +22,6 @@ const userData = {
   address: "Semarang",
 };
 
-//separate the data without password
-const { password, ...safeData } = userData;
-
 app.get("/", (req, res) => {
   res.render("index");
 });
@@ -48,6 +45,6 @@ app.post("/login", (req, res) => {
   }
   res.status(200).send({
     message: "Login Successful",
-    data: safeData,
+    data: userData,
   });
 });
