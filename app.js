@@ -22,8 +22,6 @@ const userData = {
   address: "Semarang",
 };
 
-//separate the data without password
-
 app.get("/", (req, res) => {
   res.render("index");
 });
