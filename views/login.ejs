@@ -36,6 +36,7 @@
         .then(result => {
           console.log(result)
           if (result.message === "Login Successful") {
+            alert(result.message)
             window.location.href = "/"
           }
           // sessionStorage.setItem("login-data", JSON.stringify(result))
